@@ -24,7 +24,7 @@ client.on("message", (message) => {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.find('name', 'general').send("Welcome to my oreo fort, ${member.user}!");
+    member.guild.channels.find('name', 'general').send("Welcome to my oreo fort, "${member.mention}"!");
 });
 
 client.login(process.env.BOT_TOKEN);

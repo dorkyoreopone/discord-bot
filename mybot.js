@@ -40,7 +40,7 @@ function newCard() {
 
 client.on("message", (message) => {
   if (message.content.startsWith("!uno")) {
-    message.channel.send(cards[randomNumber]);
+    message.channel.send(""+cards[randomNumber]+".");
   }
 });
 

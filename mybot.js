@@ -17,4 +17,10 @@ client.on("message", (message) => {
   }
 });
 
+client.on("message", (message) => {
+  if (message.content.startsWith("!pancake")) {
+    message.channel.send(":pancakes: omnom!");
+  }
+});
+
 client.login(process.env.BOT_TOKEN);

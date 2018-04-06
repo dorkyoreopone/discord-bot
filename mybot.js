@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 function doMagic8BallVoodoo() {
-    var rand = ['\:reduno: One!!', '\:reduno: Two!'];
+    var rand = ['<:reduno:431938212760387594>: One!!', '<:reduno:431938212760387594>: Two!'];
 
     return rand[Math.floor(Math.random()*rand.length)];
 }

@@ -27,4 +27,21 @@ client.on('guildMemberAdd', member => {
     member.guild.channels.find('name', 'general').send("Welcome to my oreo fort!");
 });
 
+var cards = [
+  'Green - 1',
+  'Red - 1',
+  'Blue - 1',
+  'Yellow - 1'
+]
+
+function newCard() {
+  var randomNumber = Math.floor(math.random() * (cards.length));
+}
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!uno")) {
+    message.channel.send(cards[randomNumber]);
+  }
+});
+
 client.login(process.env.BOT_TOKEN);

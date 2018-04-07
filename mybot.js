@@ -97,9 +97,8 @@ function doMagicBlueberryVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
-
 function doMagicAdviceVoodoo() {
-    var rand = ['Listen, if you\'re looking for help on your math homework... well I\'ve got some bad news for you. But I can offer some diet advice! Eat ***lots*** of oreos. Believe me, your tummy will thank us later once we\'re all snuggling and rubbing it like a precious lil doughball. :purple_heart:', '***INSPIRATION!!! Is that good? Ah, screw it. I\'m just gonna snuggle the daylights outta ya instead. Your amazing tush needs a good session of affection. Hah! Session of affection, we should trademark that, buddy!', 'If you\'re worthless, then we all are. Becasue we wanna be right here for and with you until the end, and that\'s a promise...', '**Pushes hooves into chest!** I can feel your heartbeat! You\'d better keep it that way, the world needs to hear the tune it drums too~!', 'Want some tips on being cute? What! But you\'re already cute! You don\'t need any tips, you adorkable mess. Love ya~!'];
+    var rand = ['Listen, if you\'re looking for help on your math homework... well I\'ve got some bad news for you. But I can offer some diet advice! Eat ***lots*** of oreos. Believe me, your tummy will thank us later once we\'re all snuggling and rubbing it like a precious lil doughball. :purple_heart:', '***INSPIRATION!!!*** Is that good? Ah, screw it. I\'m just gonna snuggle the daylights outta ya instead. Your amazing tush needs a good session of affection. Hah! Session of affection, we should trademark that, buddy!', 'If you\'re worthless, then we all are. Becasue we wanna be right here for and with you until the end, and that\'s a promise...', '**Pushes hooves into chest!** I can feel your heartbeat! You\'d better keep it that way, the world needs to hear the tune it drums too~!', 'Want some tips on being cute? What! But you\'re already cute! You don\'t need any tips, you adorkable mess. Love ya~!'];
 
     return rand[Math.floor(Math.random()*rand.length)];
 }

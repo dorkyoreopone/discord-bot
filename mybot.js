@@ -201,7 +201,7 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   if (message.content.startsWith("!advice")) {
-    message.channel.send(doMagicBlueberryVoodoo());
+    message.channel.send(doMagicAdviceVoodoo());
   }
 });
 

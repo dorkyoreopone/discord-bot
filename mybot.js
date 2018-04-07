@@ -55,6 +55,13 @@ function doMagicOreoVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicSittingVoodoo() {
+    var rand = ['***Plop! Wobbbbble~!*** Oh? Hey, is somebody underneath me?... Eh, hope they don\'t mind being a pancake for a little while~!', '***Bwomp! Woooble~!*** Oh wow! You\'re a good cushion... Super comfy too, hope my tush is big enough for ya~! I\'m still shedding some winter weight admittedly... >///>', '***Plop! Blooorp~!*** Oof, hope you don\'t mind being my seat! I\'ve been on my hooves all day, need to take a rest...'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -110,6 +117,12 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!oreo")) {
     message.channel.send(doMagicOreoVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!sit")) {
+    message.channel.send(doMagicSittingVoodoo());
   }
 });
 

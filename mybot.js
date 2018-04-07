@@ -43,6 +43,12 @@ function doMagicGamerVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicBellyrubVoodoo() {
+    var rand = ['***gwuuumbleblooorp~!*** <:blooorp:431972532250476545> G-Gotta admit, you\'re kneading me quite well here... Oooooh~ Like I\'m some kind of massive doughball, or maybe you prefer overpuffed marshmallow~?', '***Bwooooorpslooosh~*** <:blooorp:431972532250476545> W-Wow you\'re really good at this! Tell me, is my massive gut squishy enough for ya~?', '***Gloooooorpgroooan~!*** <:blooorp:431972532250476545> O-Oooooh yeah, right there... G-Get in there deep, there\'s a lot of blubber to get past~! :purple_heart:'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -85,6 +91,12 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   if (message.content.startsWith("!game")) {
+    message.channel.send(doMagicGamerVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!bellyrub")) {
     message.channel.send(doMagicGamerVoodoo());
   }
 });

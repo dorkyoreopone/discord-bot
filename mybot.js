@@ -90,7 +90,7 @@ client.on("message", (message) => {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.find('name', 'general').send(doMagicWelcomeVoodoo());
+    member.guild.channels.find('name', 'the-uno-table').send(doMagicWelcomeVoodoo());
 });
 
 client.login(process.env.BOT_TOKEN);

@@ -68,7 +68,7 @@ function doMagicSittingVoodoo() {
 }
 
 function doMagicHintingVoodoo() {
-    var rand = ['Me? Crushes? What crushes, I donut know what you\'re talking about...', 'Is that ***your*** belly rumblin\'~? Huh... Sounds like I need to get some food in you...'];
+    var rand = ['Me? Crushes? What crushes, I donut know what you\'re talking about...', 'Is that ***your*** belly rumblin\'~? Huh... Sounds like I need to get some food in you, guess I\'m taking matters into my own hooves...'];
 
     return rand[Math.floor(Math.random()*rand.length)];
 }

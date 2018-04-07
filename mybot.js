@@ -7,6 +7,12 @@ function doMagic8BallVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicBoopVoodoo() {
+    var rand = ['*Beep boop!* Hah! Get it? Robot noises? B-Because I\'m a bot?... Pls laugh...', '*Sneezes and flops back!* Ahoy! OreoDork bot at your service!! Need a hug or a belly to rub? I\'m your guy!', 'Blep! Hey! Look, my tongue\'s sticking out... N-No, that doesn\'t mean you can have tongue kisses, how lewd! >///>', 'Mlem! Hey now, that\'s my booplesnoot you fluff! :T'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 function doMagicInflationVoodoo() {
     var rand = ['***Fwoomp!*** H-Hey! S-Someone get me down here!', '***Bwooomph!*** *Creeeaaak!* L-Little too much air, nnnmmppph...', '***Fwooomp~!*** *Squeeeakycreak* H-Hmmnnph... N-Not funny you guys...', '***Bwoomph~!*** Hey! Look! Imma blimp pone! No free rides, though...'];
 
@@ -73,7 +79,7 @@ client.on("ready", () => {
 
 client.on("message", (message) => {
   if (message.content.startsWith("!boop")) {
-    message.channel.send("Mlem! Hey now, that's my booplesnoot! : O");
+    message.channel.send(doMagicBoopVoodoo());
   }
 });
 

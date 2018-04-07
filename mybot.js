@@ -14,7 +14,7 @@ function doMagicInflationVoodoo() {
 }
 
 function doMagicFeedingVoodoo() {
-    var rand = ['***gwumblegloooooorp~!*** O-Okay, thats enough sweets- **Urrrrp~!** Mind giving me some belly rubs?...', '***guuurglegroooooan~!*** Hey! Why did you stop? I still see oreos in that package!', '***blooooorpglorrp~!*** A-Ah... Hang on, Im absolutely stuffed- **urrrrp~!**', '***glrrrrbloooorp~!*** Y-You gonna help knead my belly or are you just gonna stand there?...'];
+    var rand = ['***gwumblegloooooorp~!*** O-Okay, thats enough sweets- **Urrrrp~!** Mind giving me some belly rubs?...', '***guuurglegroooooan~!*** Hey! Why did you stop? I still see oreos in that package!', '***blooooorpglorrp~!*** A-Ah... Hang on, Im absolutely stuffed- **urrrrp~!**', '***glrrrrbloooorp~!*** Y-You gonna help knead my belly or are you just gonna stand there?... Maybe you could even use it as a bed- **urrrrp~!** if youre cute enough~'];
            
     return rand[Math.floor(Math.random()*rand.length)];
 }

@@ -187,7 +187,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-  if (message.content.startsWith("!feeder")) {
+  if (message.content.startsWith("!stuffer")) {
     message.channel.send(doMagicFeederVoodoo());
   }
 });

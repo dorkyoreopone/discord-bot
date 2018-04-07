@@ -68,7 +68,7 @@ function doMagicSittingVoodoo() {
 }
 
 function doMagicHintingVoodoo() {
-    var rand = ['Me? Crushes? What crushes, I donut know what you\'re talking about...'];
+    var rand = ['No current hidden commands! Y\'all have figured me out for the time being. Bunch of cute lil detectives you are!'];
 
     return rand[Math.floor(Math.random()*rand.length)];
 }

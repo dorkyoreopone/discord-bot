@@ -7,6 +7,12 @@ function doMagic8BallVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicInflationVoodoo() {
+    var rand = ['***Fwoomp!*** H-Hey! S-Someone get me down here!', '***Bwooomph!*** *Creeeaaak!* L-Little too much air, nnnmmppph...', '***Fwooomp~!*** *Squeeeakycreak* H-Hmmnnph... N-Not funny you guys...', '***Bwoomph~!*** Hey! Look! Imma blimp pone! No free rides, though...'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -32,6 +38,12 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!uno")) {
     message.channel.send(doMagic8BallVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!inflate")) {
+    message.channel.send(doMagicInflationVoodoo());
   }
 });
 

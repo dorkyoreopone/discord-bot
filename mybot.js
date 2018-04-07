@@ -31,6 +31,12 @@ function doMagicSnuggleVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicCuteVoodoo() {
+    var rand = ['W-What? Are you sure youre not looking at a mirror...', 'N-No! Im not cute, thats you!! H-Have you even seen yourself? Y-Youre leagues and bounds better lookin... >////>', 'ahjkslauhofdkhbja I-I am not! I have no idea where you got that from, but its false... B-But I really appreciate it t-though... <3', '/)////(\ O-Oh my fluff you guys, please!'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -62,6 +68,12 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!feed")) {
     message.channel.send(doMagicFeedingVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!cute")) {
+    message.channel.send(doMagicCuteVoodoo());
   }
 });
 

@@ -61,6 +61,11 @@ function doMagicSittingVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicHintingVoodoo() {
+    var rand = ['*Yaaawn* Man, today\'s been long... Maybe someone has a seat for me I can use? purple_heart', 'Wow, I could really use a snack right now... Possibly one of my favorite snacks, actually! Say, does anyone have some around?... ***Gwoooorpgruuuumble~!*** <:blooorp:431972532250476545>'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
 
 client.on("ready", () => {
   console.log("I am ready!");
@@ -123,6 +128,12 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!sit")) {
     message.channel.send(doMagicSittingVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!hint")) {
+    message.channel.send(doMagicHintingVoodoo());
   }
 });
 

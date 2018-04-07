@@ -25,25 +25,19 @@ function doMagicWelcomeVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicSnuggleVoodoo() {
+    var rand = ['*Gives the biggest hug possible!* Awwh, thanks for the hug donation!!', '***Bloooorpgurrgle~!*** <:blooorp:431972532250476545> H-Hey! Donut hug me too hard- I-I just ate! Still a little full. xP!', '*Snugsnugs!!* Well now, youre just hecking precious, huh~?', '*Squeezes the fluff outta you!* Congrats! Youre now my own personal teddy bear. Off to the snugglefort we go! Hope you like twinkies...'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
 
 client.on("message", (message) => {
-  if (message.content.startsWith("!ping")) {
-    message.channel.send("pong!");
-  }
-});
-
-client.on("message", (message) => {
   if (message.content.startsWith("!boop")) {
-    message.channel.send("blep!");
-  }
-});
-
-client.on("message", (message) => {
-  if (message.content.startsWith("!pancake")) {
-    message.channel.send(":pancakes: omnom!");
+    message.channel.send("Mlem! Hey now, that's my booplesnoot! : O");
   }
 });
 
@@ -56,6 +50,12 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!inflate")) {
     message.channel.send(doMagicInflationVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!hug")) {
+    message.channel.send(doMagicSnuggleVoodoo());
   }
 });
 

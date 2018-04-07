@@ -13,6 +13,12 @@ function doMagicInflationVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicFeedingVoodoo() {
+    var rand = ['*gwumble****gloooooorp~!*** O-Okay, thats enough sweets- **Urrrrp~!** Mind giving me some belly rubs?...', '*guuurgle****groooooan~!*** Hey! Why did you stop? I still see oreos in that package!', '***blooooorpglorrp~!*** A-Ah... Hang on, Im absolutely stuffed- **urrrrp~!**', '***glrrrrbloooorp~!*** Y-You gonna help knead my belly or are you just gonna stand there?...'];
+           
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -44,6 +50,12 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!inflate")) {
     message.channel.send(doMagicInflationVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!feed")) {
+    message.channel.send(doMagicFeedingVoodoo());
   }
 });
 

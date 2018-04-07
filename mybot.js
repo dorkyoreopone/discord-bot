@@ -68,7 +68,7 @@ function doMagicSittingVoodoo() {
 }
 
 function doMagicHintingVoodoo() {
-    var rand = ['*Yaaawn* Man, today\'s been long... Maybe someone has a seat for me I can use? :purple_heart:', 'Wow, I could really use a snack right now... Possibly one of my favorite snacks, actually! Say, does anyone have some around?... ***Gwoooorpgruuuumble~!*** <:blooorp:431972532250476545>'];
+    var rand = ['Me? Crushes? What crushes, I donut know what you\'re talking about...', 'Is that ***your*** belly rumblin\'~? Huh... Sounds like I need to get some food in you...'];
 
     return rand[Math.floor(Math.random()*rand.length)];
 }
@@ -81,6 +81,25 @@ function doMagicWaifuVoodoo() {
 
 function doMagicCuriousVoodoo() {
     var rand = ['!amidoingaresponseright?', '...Really? What do you think you are, clever?...', '***Family Feud Buzzer Noise*** Wow. You\'re really hitting the mark, huh?', 'Not even close, bud.'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
+function doMagicFeederVoodoo() {
+    var rand = ['**In goes the cake, out goes your waistline~!** ***GwooooOOORPBLOORP~!*** <:blooorp:431972532250476545> Thank\'s for being the server\'s belly bed, fatso. Don\'t worry, we\'ll get to kneading that gut in no time~!', '**Blimps you up with maple syrup.** Oooof! Gosh, didn\'t even let me make pancakes with that? ***Slooooshbloorp~!*** Heh, not that I\'m sure you mind that sloshy, heavy gut.', '**Fills you to the brim with pie.** Pie day is everyday with you around, isn\'t it fatso... Come on, we still haven\'t gotten to the blueberry pie yet!- ***Gruuuuumbleblrrrp~!*** <:blooorp:431972532250476545> Sounds like that beached whale gut you\'re sporting wants to try it~!', '**Stuffs you full of whipped cream!** What\'s a matter, cream-puff? You look a lil full there... *Digs hooves into your massive gut* Listen to that thing! ***GwooOORPBWOOORP~!*** <:blooorp:431972532250476545>'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
+function doMagicBlueberryVoodoo() {
+    var rand = ['***Groooooan~! Sweeeeelllslooosh~!*** O-Okay, that\'s enough with the berries!! M-Mnngh, s-so tight... M-Mind squeezing some of the juice outta me, h-hope you don\'t mind the sloshing... >////>', '***Sloooooosh~! Grrrrbbl~!*** H-Haha very funny, someone better juice me... A-Actually this doesn\'t feel too bad, just a little tight...', '***Sloooooosh~! Grrrrrnnnn...*** M-Mnnphh! W-What was in that, w-why am I all blue and huge?... O-Oh fluff, a-am i leaking?...'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
+
+function doMagicAdviceVoodoo() {
+    var rand = ['Listen, if you\'re looking for help on your math homework... well I\'ve got some bad news for you. But I can offer some diet advice! Eat ***lots*** of oreos. Believe me, your tummy will thank us later once we\'re all snuggling and rubbing it like a precious lil doughball. :purple_heart:', '***INSPIRATION!!! Is that good? Ah, screw it. I\'m just gonna snuggle the daylights outta ya instead. Your amazing tush needs a good session of affection. Hah! Session of affection, we should trademark that, buddy!', 'If you\'re worthless, then we all are. Becasue we wanna be right here for and with you until the end, and that\'s a promise...;, '**Pushes hooves into chest!** I can feel your heartbeat! You\'d better keep it that way, the world needs to hear the tune it drums too~!', 'Want some tips on being cute? What! But you\'re already cute! You don\'t need any tips, you adorkable mess. Love ya~!'];
 
     return rand[Math.floor(Math.random()*rand.length)];
 }
@@ -165,6 +184,24 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!amidoingthisright")) {
     message.channel.send(doMagicCuriousVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!feeder")) {
+    message.channel.send(doMagicFeederVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!blueberry")) {
+    message.channel.send(doMagicBlueberryVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!advice")) {
+    message.channel.send(doMagicBlueberryVoodoo());
   }
 });
 

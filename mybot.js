@@ -97,7 +97,7 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   if (message.content.startsWith("!bellyrub")) {
-    message.channel.send(doMagicGamerVoodoo());
+    message.channel.send(doMagicBellyrubVoodoo());
   }
 });
 

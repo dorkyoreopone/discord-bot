@@ -37,6 +37,12 @@ function doMagicCuteVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicGamerVoodoo() {
+    var rand = ['<:gameboy:431983078836273182>! Beep boop! Hey, playing some Pokemon. Wanna battle?', '<:gameboy:431983078836273182>! This ones two player if you wanna join~! Be warned though, Im very good at it.', '<:gameboy:431983078836273182>! Grrrr! Gosh fluff it, why is this boss so hard?! Uh, hey... D-Do you think you could help me out?...', '<:gameboy:431983078836273182>! Wanna take the controller for a little while? ***glooooorpgrooooan~!*** <:blooorp:431972532250476545> O-Ooof... Y-You can even have the best seat in the house! This belly is fit for a king/queen~!'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -74,6 +80,12 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!cute")) {
     message.channel.send(doMagicCuteVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!game")) {
+    message.channel.send(doMagicGamerVoodoo());
   }
 });
 

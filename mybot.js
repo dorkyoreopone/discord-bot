@@ -62,7 +62,7 @@ function doMagicSittingVoodoo() {
 }
 
 function doMagicHintingVoodoo() {
-    var rand = ['*Yaaawn* Man, today\'s been long... Maybe someone has a seat for me I can use? purple_heart', 'Wow, I could really use a snack right now... Possibly one of my favorite snacks, actually! Say, does anyone have some around?... ***Gwoooorpgruuuumble~!*** <:blooorp:431972532250476545>'];
+    var rand = ['*Yaaawn* Man, today\'s been long... Maybe someone has a seat for me I can use? :purple_heart:', 'Wow, I could really use a snack right now... Possibly one of my favorite snacks, actually! Say, does anyone have some around?... ***Gwoooorpgruuuumble~!*** <:blooorp:431972532250476545>'];
 
     return rand[Math.floor(Math.random()*rand.length)];
 }

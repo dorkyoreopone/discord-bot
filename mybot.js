@@ -19,6 +19,12 @@ function doMagicFeedingVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicWelcomeVoodoo() {
+    var rand = ['This just in! New user has spawned, give them some love and offer them a seat at the Uno table!', 'Oh hey, new pone! Tell me, did you bring snacks- ***Gloooorpbwoorp~!*** <:blooorp:431972532250476545> W-We could sure use some, eheh... D-Dont mind the noisey belly.', 'Come on in, new guy! Grab a seat, current card is a yellow 7! Hope thats not a problem for ya~!', 'Have the Monopoly Money to play? Then what are you waiting for! Come place your bet and get yourself an Uno, amigo!'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -60,7 +66,7 @@ client.on("message", (message) => {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.find('name', 'general').send("Welcome to my oreo fort!");
+    member.guild.channels.find('name', 'general').send(doMagicWelcomeVoodoo());
 });
 
 client.login(process.env.BOT_TOKEN);

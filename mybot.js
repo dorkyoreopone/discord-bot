@@ -73,6 +73,18 @@ function doMagicHintingVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicWaifuVoodoo() {
+    var rand = ['Mnnnhh Uno~... H-Hey, what\'re you doing here! Go on, shoo! T-This ain\'t none of your business...', 'Y-Yeah Gizmo\'s a cute dork, w-whatever... I-I\'ve played a game or two with her so what??', 'So what if I think Icy is hot? Being part gay is a worthy excuse to that... r-right? Oh come on, I like Frost too! N-No fair, you got me cornered!!', 'Salem Cuisine makes good food, y-yeah... a-and gives pretty nice belly rubs... M-Mnnph, w-what\'re you looking at! I\'m not blushing!!!', 'N-No! Glowstick\'s just a friend... A-A friend who I hug a lot... and occasionally smooch... C-Can you blame me, she\'s so hecking cute!'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
+function doMagicCuriousVoodoo() {
+    var rand = ['!amidoingaresponseright?', '...Really? What do you think you are, clever?...', '***Family Feud Buzzer Noise*** Wow. You\'re really hitting the mark, huh?', 'Not even close, bud.'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -137,9 +149,22 @@ client.on("message", (message) => {
   }
 });
 
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!waifu")) {
+    message.channel.send(doMagicWaifuVoodoo());
+  }
+});
+
 client.on("message", (message) => {
   if (message.content.startsWith("!hint")) {
     message.channel.send(doMagicHintingVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!amidoingthisright")) {
+    message.channel.send(doMagicCuriousVoodoo());
   }
 });
 

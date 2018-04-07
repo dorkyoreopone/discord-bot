@@ -49,6 +49,12 @@ function doMagicBellyrubVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicOreoVoodoo() {
+    var rand = ['<:happyoreo:432272791895670787> Ah! There\'s where my cookie went. Thanks for finding it! Wanna hug as a reward? I heard I\'m *suuuuuper* soft!', '<:happyoreo:432272791895670787> N-Nobody minds if I have this last oreo, right?... ***Gurrrrglebloorp~!*** <:blooorp:431972532250476545> A-Admittedly my midnight snack didn\'t help my hunger problem...', '<:happyoreo:432272791895670787> I spy with my little eye the best kind of cookie on the planet!!', '<:happyoreo:432272791895670787> ***Omnom!*** Hey now, how\'d that cookie get loose! Did one of you hide it on me?...'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -98,6 +104,12 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!bellyrub")) {
     message.channel.send(doMagicBellyrubVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!oreo")) {
+    message.channel.send(doMagicOreoVoodoo());
   }
 });
 

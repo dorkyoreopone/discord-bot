@@ -103,6 +103,12 @@ function doMagicAdviceVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicPachimariVoodoo() {
+    var rand = ['<:squishybabbu:443026200852692994> What\'s a matter? Ain\'t ever seen a squeaky, cutie patootie onion-octopus before?', '<:squishybabbu:443026200852692994> ***Squeaky Squook~!*** This Pachimari hopes you have a wonderful day!', '<:squishybabbu:443026200852692994> Need a cuddle friend? Fret not, Squishy Bab is here to save the day! Seeing as how all your other snuggle companions are busy stuffin themselves...', '<:squishybabbu:443026200852692994> ***SqueakSqueak!!*** H-Hey, don\'t hug me too hard, you\'ll break my squeaker!', '<:squishybabbu:443026200852692994> ***Squeeeeeeak~!*** H-Hey now, don\'t you think you should be helping your team out? That Genji over there doesn\'t seem to be holding his own very well...'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -201,6 +207,12 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!advice")) {
     message.channel.send(doMagicAdviceVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!pachimari")) {
+    message.channel.send(doMagicPachimariVoodoo());
   }
 });
 

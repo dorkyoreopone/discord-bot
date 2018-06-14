@@ -8,7 +8,7 @@ function doMagic8BallVoodoo() {
 }
 
 function doMagicBoopVoodoo() {
-    var rand = ['*Beep boop!* Hah! Get it? Robot noises? B-Because I\'m a bot?... Pls laugh...', '*Sneezes and flops back!* Ahoy! OreoDork bot at your service!! Need a hug or a belly to rub? I\'m your guy!', 'Blep! Hey! Look, my tongue\'s sticking out... N-No, that doesn\'t mean you can have tongue kisses, how lewd! >///>', 'Mlem! Hey now, that\'s my booplesnoot you fluff! :T'];
+    var rand = ['*Mlem!* Hey, you need something cutiebutt?', '*Beep boop!* Hah! Get it? Robot noises? B-Because I\'m a bot?... Pls laugh...', '*Sneezes and flops back!* Ahoy! OreoDork bot at your service!! Need a hug or a belly to rub? I\'m your guy!', 'Blep! Hey! Look, my tongue\'s sticking out... N-No, that doesn\'t mean you can have tongue kisses, how lewd! >///>', 'Mlem! Hey now, that\'s my booplesnoot you fluff! :T'];
 
     return rand[Math.floor(Math.random()*rand.length)];
 }

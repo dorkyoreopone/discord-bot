@@ -109,6 +109,12 @@ function doMagicPachimariVoodoo() {
     return rand[Math.floor(Math.random()*rand.length)];
 }
 
+function doMagicEightBallVoodoo() {
+    var rand = [':8ball: Yes', ':8ball: No', ':8ball: It\'s possible', ':8ball: It is certain', ':8ball: Oreo! Uh, I mean yeah, sure.'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -213,6 +219,12 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content.startsWith("!pachimari")) {
     message.channel.send(doMagicPachimariVoodoo());
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content.startsWith("!8ball")) {
+    message.channel.send(doMagicEightBallVoodoo());
   }
 });
 

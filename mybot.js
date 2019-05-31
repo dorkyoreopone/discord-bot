@@ -110,7 +110,7 @@ function doMagicPachimariVoodoo() {
 }
 
 function doMagicEightBallVoodoo() {
-    var rand = [':8ball: Yes', ':8ball: No', ':8ball: It\'s possible', ':8ball: It is certain', ':8ball: Oreo! Uh, I mean yeah, sure.'];
+    var rand = [':8ball: Yes', ':8ball: No', ':8ball: It\'s possible', ':8ball: It is certain', ':8ball: Oreo! Uh, I mean yeah, sure.', ':8ball: Less than likely...'];
 
     return rand[Math.floor(Math.random()*rand.length)];
 }
